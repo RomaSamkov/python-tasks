@@ -18,3 +18,21 @@ def sum_mix(arr):
     return total_sum
 
 print(sum_mix([9, 3, '7', '3']))
+
+# 8 kyu Third Angle of a Triangle
+# You are given two interior angles (in degrees) of a triangle.
+# Write a function to return the 3rd.
+# Note: only positive integers will be tested.
+def other_angle(a, b):
+    # total_angle = 180
+    # third_angle = total_angle - (a+b)
+    return 180 - (a+b)
+
+print(other_angle(30, 60))
+
+# 8 kyu Exclamation marks series #1: Remove an exclamation mark from the end of string
+# Remove an exclamation mark from the end of a string. For a beginner kata, you can assume that the input data is always a string, no need to verify it.
+def remove(s):
+    return s.removesuffix('!') 
+
+print(remove("Hi!"))
