@@ -69,4 +69,12 @@ def find_difference(a, b):
 def plural(n):
     return n != 1
 
-print(plural(1))
+# print(plural(1))
+
+# 8 kyu altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+#  each lowercase letter becomes uppercase and each uppercase letter becomes lowercase. 
+def to_alternating_case(string):
+    return string.swapcase()
+
+
+print(to_alternating_case("hello WORLD"))
