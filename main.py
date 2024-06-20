@@ -58,6 +58,15 @@ def is_palindrome(s):
 def find_difference(a, b):
     volume_a = a[0]*a[1]*a[2]
     volume_b = b[0]*b[1]*b[2]
-    return abs(volume_a - volume_b)
+    return abs(volume_a - volume_b) 
 
-print(find_difference([3, 2, 5], [1, 4, 4]))
+# print(find_difference([3, 2, 5], [1, 4, 4]))
+
+# 8 kyu Plural
+# We need a simple function that determines if a plural is needed or not. 
+# It should take a number, and return true if a plural should be used with that number or false if not. 
+# This would be useful when printing out a string such as 5 minutes, 14 apples, or 1 sun.
+def plural(n):
+    return n != 1
+
+print(plural(1))
