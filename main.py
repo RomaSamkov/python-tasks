@@ -133,4 +133,31 @@ def to_binary(n):
     return int(bin(n)[2:])
 
 
-print(to_binary(5))
+# print(to_binary(5))
+
+# 7 kyu Beginner Series #3 Sum of Numbers
+# Given two integers a and b, which can be positive or negative,
+# find the sum of all the integers between and including them and return it.
+# If the two numbers are equal return a or b.
+# Note: a and b are not ordered!
+def get_sum(a, b):
+    min_num = min(a, b)
+    max_naum = max(a, b)
+
+    n = max_naum - min_num + 1
+    total_sum = n * (min_num + max_naum) // 2
+    return total_sum
+
+
+# print(get_sum(0, 1))
+
+# 8 kyu Reversing Words in a String
+# You need to write a function that reverses the words in a given string.
+# A word can also fit an empty string. If this is not clear enough, here are some examples:
+# As the input may have trailing spaces, you will also need to ignore unnecessary whitespace.
+def reverse(st):
+    reverse_word = st.split()[::-1]
+    return ' '.join(reverse_word)
+
+
+print(reverse('Hello World'))
