@@ -213,8 +213,31 @@ def final_grade(exam, projects):
 # Array/list with the length of each word added to each element .
 def add_length(str_):
     words = str_.split()
-    result = [f"{word} {len(word)}"for word in words]
+    result = [f"{word} {len(word)}" for word in words]
     return result
 
 
-print(add_length('apple ban'))
+# print(add_length('apple ban'))
+
+# 8 kyu Hello, Name or World! Define a method hello that returns "Hello, Name!" to a given name, or says Hello,
+# World! if name is not given (or passed as an empty String). Assuming that name is a String, and it checks for user
+# typos to return a name with a first capital letter (Xxxx).
+def hello(name=""):
+    if name:
+        return f"Hello, {name.capitalize()}!"
+    else:
+        return "Hello, World!"
+
+
+# print(hello("aLIce"))
+
+# 7 kyu Sort array by string length Write a function that takes an array of strings as an argument and returns a
+# sorted array containing the same strings, ordered from shortest to longest. For example, if this array were passed
+# as an argument: ["Telescopes", "Glasses", "Eyes", "Monocles"] Your function would return the following array: [
+# "Eyes", "Glasses", "Monocles", "Telescopes"] All the strings in the array passed to your function will be
+# different lengths, so you will not have to decide how to order multiple strings of the same length.
+def sort_by_length(arr):
+    return sorted(arr, key=len)
+
+
+print(sort_by_length(["beg", "life", "i", "to"]))
