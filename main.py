@@ -277,4 +277,26 @@ def check(seq, elem):
     return elem in seq
 
 
-print(check([66, 101], 66))
+# print(check([66, 101], 66))
+
+
+# 8 kyu Grasshopper - Basic Function Fixer
+# Fix the function I created this function to add five to any number that
+# was passed in to it and return the new value. It doesn't throw any errors, but it returns the wrong number.
+def add_five(num):
+    total = num + 5
+    return total
+
+
+# print(add_five(5))
+
+# 7 kyu Two to One
+# Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string,
+# the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+def longest(a1, a2):
+    combined_set = set(a1 + a2)
+    result = "".join(sorted(combined_set))
+    return result
+
+
+print(longest("aretheyhere", "yestheyarehere"))
