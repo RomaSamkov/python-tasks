@@ -299,4 +299,36 @@ def longest(a1, a2):
     return result
 
 
-print(longest("aretheyhere", "yestheyarehere"))
+# print(longest("aretheyhere", "yestheyarehere"))
+
+
+# 8 kyu Remove duplicates from list
+# Define a function that removes duplicates from an array of non-negative numbers and returns it as a result.
+# The order of the sequence has to stay the same.
+def distinct(seq):
+    seen = set()
+    result = []
+    for num in seq:
+        if num not in seen:
+            seen.add(num)
+            result.append(num)
+    return result
+
+
+# print(distinct([1, 2, 2, 3, 3, 4, 4, 5, 6, 7, 7, 7]))
+
+# 8 kyu Thinkful - Logic Drills: Traffic light
+# You're writing code to control your town's traffic lights. You need a
+# function to handle each change from green, to yellow, to red, and then to green again. Complete the function that
+# takes a string as an argument representing the current state of the light and returns a string representing the
+# state the light should change to. For example, when the input is green, output should be yellow.
+def update_light(current):
+    if current == 'green':
+        return 'yellow'
+    elif current == 'yellow':
+        return 'red'
+    elif current == 'red':
+        return 'green'
+
+
+print(update_light('green'))
