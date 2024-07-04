@@ -331,4 +331,28 @@ def update_light(current):
         return 'green'
 
 
-print(update_light('green'))
+# print(update_light('green'))
+
+# 7 kyu Find the stray number
+# You are given an odd-length array of integers, in which all of them are the same, except for one single number.
+# Complete the method which accepts such an array, and returns that single different number.
+# The input array will always be valid! (odd-length >= 3)
+def stray(arr):
+    unique_num = 0
+    for num in arr:
+        unique_num ^= num
+    return unique_num
+
+
+# print(stray([1, 1, 1, 1, 1, 1, 2]))
+
+
+# 7 kyu Largest pair sum in array
+# Given a sequence of numbers, find the largest pair sum in the sequence.
+# Input sequence contains minimum two elements and every element is an integer.
+def largest_pair_sum(numbers):
+    sorted_numbers = sorted(numbers, reverse=True)
+    return sorted_numbers[0] + sorted_numbers[1]
+
+
+print(largest_pair_sum([10, 14, 2, 23, 19]))
