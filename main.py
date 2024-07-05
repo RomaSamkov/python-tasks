@@ -355,4 +355,23 @@ def largest_pair_sum(numbers):
     return sorted_numbers[0] + sorted_numbers[1]
 
 
-print(largest_pair_sum([10, 14, 2, 23, 19]))
+# print(largest_pair_sum([10, 14, 2, 23, 19]))
+
+# 8 kyu No Loops 2 - You only need one You will be given an array a and a value x. All you need to do is check
+# whether the provided array contains the value, without using a loop. Array can contain numbers or strings. x can be
+# either. Return true if the array contains the value, false if not. With strings, you will need to account for case.
+def check_a(a, x):
+    return x in a
+
+# print(check_a([66, 101], 66))
+
+
+# 8 kyu 5 without numbers !!
+# Write a function that always returns 5
+# Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+# Good luck :)
+def unusual_five():
+    return len("abcde")
+
+
+print(unusual_five())
