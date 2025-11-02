@@ -1,26 +1,10 @@
-# 8 kyu
-# Combine strings function
-# Create a function named combineNames/combine_names/CombineNames that accepts
-# two parameters (first and last name). The function should return the full name.
-#
-# Example:
-#
-# With "James" as the first name and "Stevens"
-# as the last name should return "James Stevens"
-
-def combine_names(first, last):
-    return f"{first} {last}"
+# Write a small function that returns the values of an array that are not odd.
+# All values in the array will be integers. Return the good values in the order
+# they are given.
 
 
-print(combine_names("James", "Stevens"))
+def no_odds(values):
+    return [num for num in values if num % 2 == 0]
 
 
-# Accountant time! For a given quantity and price (per mango),
-# calculate the total cost of the mangoes.
-# But! Every third mango is free!
-
-def mango(quantity, price):
-    return price * (quantity - (quantity // 3))
-
-
-print(mango(3, 3))
+print(no_odds([1, 2, 3, 4, 5, 6]))
