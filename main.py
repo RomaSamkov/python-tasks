@@ -1,10 +1,10 @@
-# Write a small function that returns the values of an array that are not odd.
-# All values in the array will be integers. Return the good values in the order
-# they are given.
+def capitals(word):
+    return [i for i, letter in enumerate(word) if letter.isupper()]
 
 
-def no_odds(values):
-    return [num for num in values if num % 2 == 0]
+print(capitals("CodEWaRs"))
 
+my_list = ["apple", "banana", "cherry"]
 
-print(no_odds([1, 2, 3, 4, 5, 6]))
+for index, item in enumerate(my_list):
+    print(f"Index: {index}, Item: {item}")
