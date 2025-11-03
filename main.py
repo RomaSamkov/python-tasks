@@ -1,25 +1,5 @@
-def add(a, b):
-    return a + b
+def two_sort(array):
+    return "***".join(sorted(array)[0])
 
 
-def multiply(a, b):
-    return a * b
-
-
-def divide(a, b):
-    return a / b
-
-
-def mod(a, b):
-    return a % b
-
-
-def exponent(a, b):
-    return a ** b
-
-
-def subt(a, b):
-    return a - b
-
-
-print(mod(3, 6))
+print(two_sort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]))
