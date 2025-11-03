@@ -1,10 +1,25 @@
-def capitals(word):
-    return [i for i, letter in enumerate(word) if letter.isupper()]
+def add(a, b):
+    return a + b
 
 
-print(capitals("CodEWaRs"))
+def multiply(a, b):
+    return a * b
 
-my_list = ["apple", "banana", "cherry"]
 
-for index, item in enumerate(my_list):
-    print(f"Index: {index}, Item: {item}")
+def divide(a, b):
+    return a / b
+
+
+def mod(a, b):
+    return a % b
+
+
+def exponent(a, b):
+    return a ** b
+
+
+def subt(a, b):
+    return a - b
+
+
+print(mod(3, 6))
