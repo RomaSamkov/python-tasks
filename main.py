@@ -1,5 +1,5 @@
-def two_sort(array):
-    return "***".join(sorted(array)[0])
+def sum_two_smallest_numbers(numbers):
+    return sum(sorted(numbers)[:2])
 
 
-print(two_sort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]))
+print(sum_two_smallest_numbers([19, 5, 42, 2, 77]))
